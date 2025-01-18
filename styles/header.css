@@ -3,6 +3,7 @@
   height: 24px; /* Altura */
   background-image: url("../img/Menu.svg"); /* Imagem de fundo */
   background-repeat: no-repeat; /* Não repetir a imagem */
+  background-position: center; /* Posição da imagem */
   display: inline-block; /* Exibir como bloco */
 }
 
