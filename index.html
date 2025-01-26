@@ -8,7 +8,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
      <link href="https://fonts.googleapis.com/css?family=Poppins:wght@300;400;500;700&display-swa">
-    <link rel="stylesheet" href="styles.css">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <body>
@@ -49,8 +50,40 @@
           <p class="banner__texto">Encontre em nossa estante o que precisa para seu desenvolvimento!</p>
           <input type="search" class="banner__pesquisa" placeholder="Qual será sua proxima leitura?" >
          </section>
-   </body>
+         <section class="carrossel">
+               <h2 class="carrossel__titulo">Novos Lançamentos</h2>
+               <div class="swiper">
+               </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide"><img src="img/ApacheKafka.svg" alt="Livro sobre apache kafka e spring boot da alura books"></div>
+                        <div class="swiper-slide"><img src="img/Liderança.svg" alt="Livro sobre liderança em Design da alura book"></div>
+                        <div class="swiper-slide"><img src="img/Javascript.svg" alt="Livro sobre Javascript assertibo da alurabook"></div>
+                        <div class="swiper-slide"><img src="img/Guia Front-end.svg" alt="Livro Guia Fron-end"></div>
+                        <div class="swiper-slide"><img src="img/Portugol.svg" alt="Livro sobre Portugal"></div>
+                        <div class="swiper-slide"><img src="img/Acessibilidade.svg" alt="Livro sobre Acessibilidade Web"></div>
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+            
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+            
+                </div>
+         </section>
+
+         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js">
+         const swiper = new Swiper('.swiper', {
+            spaceBetween: 10,
+            slidesPerView: 3,
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+            },
+        });
+          </script>
+     </body>
    
-   </html>
-   
-   </html>
+</html>
